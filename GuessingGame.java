@@ -19,8 +19,10 @@ public class GuessingGame {
             guesses = input.nextInt();
             attempts++;
 
-            if (guesses<secretNumber){
+            if (guesses<secretNumber) {
                 System.out.println("Your guess is to low.");
+            } else if (guesses > secretNumber) {
+                System.out.println("Your guess is to high");
             }else{
                 System.out.println("Congratulations! You guessed it in "+attempts+" attempts.");
             }
